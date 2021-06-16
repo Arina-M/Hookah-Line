@@ -432,6 +432,7 @@ All responsive css rule
     margin-left: 0;
   }
 
+
   .subscription-area h3 {
     font-size: 2rem;
     text-align: center;
@@ -512,5 +513,11 @@ All responsive css rule
 
   .subscription {
     margin-top: 10px;
+  }
+}
+
+@media (max-width: 768px) {
+  .banner-1{
+    background: #131824;
   }
 }

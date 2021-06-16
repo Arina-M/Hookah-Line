@@ -200,21 +200,23 @@ a:hover {
 
 .section {
   position: relative;
+  background: #1f2833;
 }
 
 .section-padding {
-  padding: 120px 0;
+  padding: 80px 0;
+  background: #1f2833;
 }
 .section-padding.bottom-0 {
   padding-bottom: 0;
 }
 
 .offwhite-bg {
-  background-color: #f7f7fa;
+  background-color: #131824;
 }
 
 .theme-bg {
-  background-color: #19202c ;
+  /*background-color: #131824 ;*/
   color: #ffffff;
 }
 
@@ -225,37 +227,40 @@ a:hover {
   color: #ffffff;
 }
 
-.overlay-black {
-  background-color: rgba(17, 17, 17, 0.9);
-}
+/*.overlay-black {*/
+/*  background-color: rgba(17, 17, 17, 0.9);*/
+/*}*/
 
 .section-header {
   position: relative;
   padding-bottom: 25px;
   margin-bottom: 60px;
 }
-.section-header:before {
-  content: "";
-  width: 370px;
-  height: 1px;
-  position: absolute;
-  bottom: 0;
-  background-color: rgba(192, 57, 43, 0.11);
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-}
-.section-header:after {
-  content: "";
-  width: 60px;
-  height: 1px;
-  position: absolute;
-  bottom: 0;
-  background-color: #19202c;
-  left: 50%;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
-}
+
+
+/*.section-header:before {*/
+/*  content: "";*/
+/*  width: 370px;*/
+/*  height: 1px;*/
+/*  position: absolute;*/
+/*  bottom: 0;*/
+/*  background-color: rgba(192, 57, 43, 0.11);*/
+/*  left: 50%;*/
+/*  -webkit-transform: translateX(-50%);*/
+/*          transform: translateX(-50%);*/
+/*}*/
+/*.section-header:after {*/
+/*  content: "";*/
+/*  width: 60px;*/
+/*  height: 1px;*/
+/*  position: absolute;*/
+/*  bottom: 0;*/
+/*  background-color: #19202c;*/
+/*  left: 50%;*/
+/*  -webkit-transform: translateX(-50%);*/
+/*          transform: translateX(-50%);*/
+/*}*/
+
 .section-header.style-2 {
   padding-bottom: 0;
   margin-bottom: 30px;
@@ -272,6 +277,8 @@ a:hover {
   font-weight: 300;
   line-height: 1;
   margin: 0;
+  color: #9cffff;
+
 }
 
 .section-subtext {
@@ -468,10 +475,11 @@ Navbar Styles
   margin-bottom: 25px;
 }
 .navbar-default .navbar-nav > li > a {
-  font-size: 1.4rem;
+  font-size: 1.8rem;
   font-weight: 700;
   color: #ffffff;
   text-transform: uppercase;
+  padding: 15px 50px 0 0;
 }
 .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a a:visited {
   color: #ffffff;
@@ -540,7 +548,7 @@ Navbar Styles
 Banner Styles
 ----------------------------------------*/
 .img-logo{
-  width: 179px;
+  width: 170px;
   height: 192px;
 }
 
@@ -781,7 +789,7 @@ Video Description Styles
 Screenshot Styles
 ------------------------*/
 .screen-mock {
-  background-image: url(../images/mocks/screenshot.png);
+  /*background-image: url(../images/mocks/screenshot.png);*/
   background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
@@ -799,22 +807,26 @@ Screenshot Styles
 .screenshot-wrap {
   margin: 65px -20px 0;
   overflow: hidden;
+  padding: 0 0 70px 0;
 }
 
-.screenshot-carousel .owl-wrapper-outer {
+
+
+
+.screenshot-carousel-1 .screenshot-carousel .owl-wrapper-outer {
   overflow: visible;
 }
-.screenshot-carousel .owl-item img {
+.screenshot-carousel-1 .screenshot-carousel .owl-item img {
   width: calc(100% - 40px);
   margin: 0 20px;
   -webkit-box-shadow: 0px 0px 27px 0px rgba(0, 0, 0, 0.09);
           box-shadow: 0px 0px 27px 0px rgba(0, 0, 0, 0.09);
 }
-.screenshot-carousel .owl-pagination {
+.screenshot-carousel-1 .screenshot-carousel .owl-pagination {
   text-align: center;
   margin-top: 100px;
 }
-.screenshot-carousel .owl-page {
+.screenshot-carousel-1 .screenshot-carousel .owl-page {
   width: 10px;
   height: 10px;
   border-radius: 5px;
@@ -824,8 +836,32 @@ Screenshot Styles
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
 }
-.screenshot-carousel .owl-page.active {
+.screenshot-carousel-1 .screenshot-carousel .owl-page.active {
   width: 30px;
+}
+
+.sub-text-title{
+  color: #FFFFFF;
+  font-size: 2.5rem;
+
+}
+.main-wrap-menu{
+  width: 196px;
+  height: 348px;
+  border: #9cffff 1px solid;
+  background: #141a21;
+}
+.menu-img{
+  width: 157px;
+  height: 195px;
+  padding: 10px 0 0 33px;
+
+
+}
+.menu-text{
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 12px;
 }
 
 /*----------------------------------------
@@ -881,6 +917,13 @@ Pricing Styles
 .pricing-table:hover .btn, .pricing-table.active .btn {
   background-color: #9cffff;
   color: #ffffff;
+}
+
+
+.text-about_us{
+  color: #FFFFFF;
+  font-size: 20px;
+  text-align: center;
 }
 
 /*----------------------------------------
@@ -1062,6 +1105,7 @@ Contact Styles
 }
 .contact-area .right-image .overlay-black {
   height: 765px;
+  background: #131824;
 }
 
 .form-wrap {

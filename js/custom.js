@@ -51,7 +51,7 @@ $(document).ready(function () {
     /*--------------------------------------
     Screenshot Carousel
     --------------------------------------*/
-    $('#screenshot-carousel').owlCarousel({
+    $('#screenshot-carousel-1').owlCarousel({
         items: 5,
         itemsDesktop: [1199, 5],
         itemsDesktopSmall: [991, 3],
@@ -64,6 +64,18 @@ $(document).ready(function () {
         pagination: true,
     });
 
+    $('#screenshot-carousel').owlCarousel({
+        items: 5,
+        itemsDesktop: [1199, 5],
+        itemsDesktopSmall: [991, 3],
+        itemsTablet: [767, 1],
+        itemsMobile: [479, 1],
+        slideSpeed: 200,
+        autoPlay: 3000,
+        stopOnHover: true,
+        navigation: false,
+        pagination: true,
+    });
     /*--------------------------------------
     Testimonial Carousel
     --------------------------------------*/
